@@ -8,7 +8,11 @@
 </head>
 <body>
     <p>
-    {{$request}}
+    {{$name}}
+    <br>
+    {{$email}}
+    <br>
+    {{$password}}
     </p>
 </body>
 </html>

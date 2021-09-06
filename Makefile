@@ -65,7 +65,20 @@ restart-dev: stop-dev start-dev
 clear-cache:
 	docker-compose exec php /app/artisan cache:clear 
 
+make-factory:
+	docker-compose exec php /app/artisan make:factory TestFactory
 
+make-migration:
+	docker-compose exec php /app/artisan make:migration create_test_table
+
+make-seeder-f:
+	docker-compose exec php /app/artisan make:seeder ProductSeeder && docker-compose exec php /app/artisan make:factory ProductFactory
+
+do-seeder-refresh:
+	docker-compose exec php /app/artisan migrate:fresh --seed
+
+do-migrate:
+	docker-compose exec php /app/artisan migrate
 
 start:
 	docker-compose -f docker-compose-production.yml up -d

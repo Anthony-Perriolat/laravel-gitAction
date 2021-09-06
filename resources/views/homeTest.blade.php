@@ -167,7 +167,7 @@
                         <h3>Dernière connexion</h3>
                         <p>Derniere c est de la merde connexion : <<< en cours >>></p>
                         <form class="requires-validation"  method="POST" action="/resultTest">
-
+                            @csrf
 
                             <div class="col-md-12">
                                <input class="form-control" type="text" name="name" placeholder="Nom Prènom" required>
@@ -192,11 +192,6 @@
                            <div class="col-md-12">
                               <input class="form-control" type="password" name="password" placeholder="Mot de passe" required>
                            </div>
-
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                          <label class="form-check-label">I confirm that all data are correct</label>
-                        </div>
                   
 
                             <div class="form-button mt-3">
