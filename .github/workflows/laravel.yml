@@ -16,8 +16,8 @@ jobs:
         image: mdillon/postgis:10
         env:
           POSTGRES_DB: postgresdb
-          POSTGRES_USER: postgresuser
-          POSTGRES_PASSWORD: secret
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: per
           POSTGRES_HOST: postgres
         ports:
         - 5432:5432
