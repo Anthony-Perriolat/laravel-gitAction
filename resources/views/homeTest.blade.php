@@ -165,10 +165,9 @@
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Dernière connexion</h3>
-                        <p>Derniere connexion : <<< en cours >>></p>
-                        <form class="requires-validation" novalidate method="POST" action="/result">
+                        <p>Derniere c est de la merde connexion : <<< en cours >>></p>
+                        <form class="requires-validation"  method="POST" action="/resultTest">
 
-                            @csrf
 
                             <div class="col-md-12">
                                <input class="form-control" type="text" name="name" placeholder="Nom Prènom" required>

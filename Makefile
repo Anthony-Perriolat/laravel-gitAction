@@ -62,6 +62,11 @@ restart: stop start
 
 restart-dev: stop-dev start-dev
 
+clear-cache:
+	docker-compose exec php /app/artisan cache:clear 
+
+
+
 start:
 	docker-compose -f docker-compose-production.yml up -d
 

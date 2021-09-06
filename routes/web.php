@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/homeTest', function () {
-    // return view('homeTest');
-    return response("test",201);
+    return view('homeTest');
 });
-
+Route::post('/resultTest', [FormController::class, 'formTDD']);

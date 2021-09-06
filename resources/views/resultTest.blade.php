@@ -7,6 +7,8 @@
     <title>Result</title>
 </head>
 <body>
-    
+    <p>
+    {{$request}}
+    </p>
 </body>
 </html>
